@@ -1,0 +1,10 @@
+@charset "utf-8";
+caption {
+  text-align: left;
+}
+td {
+  width: 250px;
+  height: 30px;
+  border-bottom: solid 1px #FF0000;
+  cursor: default;
+}
