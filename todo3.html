@@ -4,12 +4,35 @@
 <title>寝るまでにやる事</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+caption {
+  text-align: left;
+}
+td {
+  width: 250px;
+  height: 30px;
+  border-bottom: solid 1px #FF0000;
+  cursor: default;
+}
+</style>
 </head>
 <body>
-・寝るまでにやる事<br>
-<label><input type="checkbox" name="todo3" value="1">勉強</label><br>
-<label><input type="checkbox" name="todo3" value="2">宿題（学校）</label><br>
-<label><input type="checkbox" name="todo3" value="3">宿題（塾）</label><br>
-<label><input type="checkbox" name="todo3" value="4">明日の準備</label><br>
+<table>
+  <caption>・寝るまでにやる事</caption>
+  <tbody>
+    <tr>
+      <td onclick="this.children[0].click();"><input type="checkbox" name="todo3" value="1">勉強</td>
+    </tr>
+    <tr>
+      <td onclick="this.children[0].click();"><input type="checkbox" name="todo3" value="2">宿題（学校）</td>
+    </tr>
+    <tr>
+      <td onclick="this.children[0].click();"><input type="checkbox" name="todo3" value="3">宿題（塾）</td>
+    </tr>
+    <tr>
+      <td onclick="this.children[0].click();"><input type="checkbox" name="todo3" value="4">明日の準備</td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>
