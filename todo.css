@@ -1,10 +1,29 @@
 @charset "utf-8";
+table {
+  border-collapse: collapse;
+}
+
 caption {
   text-align: left;
 }
-td {
-  width: 250px;
-  height: 30px;
+
+tr {
+  height: 36px;
+}
+
+td.task {
+  width: 150px;
   border-bottom: solid 1px #FF0000;
   cursor: default;
+}
+
+td.completed {
+  color: #AAAAAA;
+  text-decoration: line-through;
+}
+
+td.time {
+  width: 40px;
+  color: #AAAAAA;
+  border-bottom: solid 1px #FF0000;
 }
