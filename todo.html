@@ -12,25 +12,35 @@
   ・帰ったらやる事
   <table>
     <tbody>
-      <tr onclick="changeStatus('1_0');">
-        <td id="task1_0" class="task"><input type="hidden" name="todo1" id="todo1_0" value="">はしばこ</td>
-        <td id="time1_0" class="time"></td>
+      <tr id="1_0">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">はしばこ</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
-      <tr onclick="changeStatus('1_1');">
-        <td id="task1_1" class="task"><input type="hidden" name="todo1" id="todo1_1" value="">水筒</td>
-        <td id="time1_1" class="time"></td>
+      <tr id="1_1">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">水筒</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
-      <tr onclick="changeStatus('1_2');">
-        <td id="task1_2" class="task"><input type="hidden" name="todo1" id="todo1_2" value="">学校からのプリント</td>
-        <td id="time1_2" class="time"></td>
+      <tr id="1_2">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">学校からのプリント</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
-      <tr onclick="changeStatus('1_3');">
-        <td id="task1_3" class="task"><input type="hidden" name="todo1" id="todo1_3" value="">洗濯物（汚れ）</td>
-        <td id="time1_3" class="time"></td>
+      <tr id="1_3">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">洗濯物（汚れ）</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
-      <tr onclick="changeStatus('1_4');">
-        <td id="task1_4" class="task"><input type="hidden" name="todo1" id="todo1_4" value="">洗濯物（畳む）</td>
-        <td id="time1_4" class="time"></td>
+      <tr id="1_4">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">洗濯物（畳む）</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
     </tbody>
   </table>
@@ -40,9 +50,11 @@
   ・18時にやる事
   <table>
     <tbody>
-      <tr onclick="changeStatus('2_0');">
-        <td id="task2_0" class="task"><input type="hidden" name="todo2" id="todo2_0" value="">風呂（シャワー）</td>
-        <td id="time2_0" class="time"></td>
+      <tr id="2_0">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">風呂（シャワー）</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
     </tbody>
   </table>
@@ -52,21 +64,29 @@
   ・寝るまでにやる事
   <table>
     <tbody>
-      <tr onclick="changeStatus('3_0');">
-        <td id="task3_0" class="task"><input type="hidden" name="todo3" id="todo3_0" value="">勉強</td>
-        <td id="time3_0" class="time"></td>
+      <tr id="3_0">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">勉強</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
-      <tr onclick="changeStatus('3_1');">
-        <td id="task3_1" class="task"><input type="hidden" name="todo3" id="todo3_1" value="">宿題（学校）</td>
-        <td id="time3_1" class="time"></td>
+      <tr id="3_1">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">宿題（学校）</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
-      <tr onclick="changeStatus('3_2');">
-        <td id="task3_2" class="task"><input type="hidden" name="todo3" id="todo3_2" value="">宿題（塾）</td>
-        <td id="time3_2" class="time"></td>
+      <tr id="3_2">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">宿題（塾）</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
-      <tr onclick="changeStatus('3_3');">
-        <td id="task3_3" class="task"><input type="hidden" name="todo3" id="todo3_3" value="">明日の準備</td>
-        <td id="time3_3" class="time"></td>
+      <tr id="3_3">
+        <td class="mark"></td>
+        <td class="task" onclick="changeStatus(this);">明日の準備</td>
+        <td class="none" onclick="changeStatus(this);"><div>不要</div></td>
+        <td class="time"></td>
       </tr>
     </tbody>
   </table>
