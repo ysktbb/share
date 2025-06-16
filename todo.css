@@ -40,15 +40,15 @@ td.task {
 }
 
 td.none {
-  width: 40px;
+  width: 60px;
   height: 100%;
   cursor: default;
 }
 
 .none > div {
   width: 90%;
-  height: 60%;
-  font-size: 11px;
+  height: 80%;
+  font-size: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
