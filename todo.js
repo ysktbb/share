@@ -24,6 +24,7 @@ window.onload = function() {
           let trObj = document.getElementById(todo);
           if (checkStatus[todo][0] == COMPLETED) {
             trObj.children[0].innerHTML = "<div class='done'>" + checkStatus[todo][0] + "</div>";
+            trObj.children[2].children[0].classList.add("completed");
           } else {
             trObj.children[0].innerHTML = "<div>" + checkStatus[todo][0] + "</div>";
           }
@@ -48,6 +49,7 @@ function changeStatus(obj) {
       // 完了済み ⇒ 未完了
       trObj.children[0].innerText = "";
       trObj.children[1].classList.remove("completed");
+      trObj.children[2].children[0].classList.remove("completed");
       trObj.children[3].innerText = "";
     } else if (trObj.children[0].innerText == NOTHING) {
       // 何もしない
@@ -55,6 +57,7 @@ function changeStatus(obj) {
       // 未完了 ⇒ 完了済み
       trObj.children[0].innerHTML = "<div class='done'>" + COMPLETED + "</div>";
       trObj.children[1].classList.add("completed");
+      trObj.children[2].children[0].classList.add("completed");
       trObj.children[3].innerText = ("00" + new Date().getHours()).slice(-2) + ":" + ("00" + new Date().getMinutes()).slice(-2);
     }
   } else if (obj.classList.contains("none")) {
