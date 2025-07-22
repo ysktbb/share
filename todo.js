@@ -7,7 +7,7 @@ const COMPLETED = "済";
 // 不要
 const NOTHING = "無";
 // TODO一覧
-let todoList = ["1_0", "1_1", "1_2", "1_3", "1_4", "2_0", "3_0", "3_1", "3_2", "3_3"];
+let todoList = ["1_0", "1_1", "1_2", "1_3", "1_4", "2_0", "2_1", "2_2", "3_0"];
 
 window.onload = function() {
   if (localStorage) {
@@ -87,10 +87,9 @@ function setLocalStorage() {
     "1_3": [document.getElementById("1_3").children[0].innerText, document.getElementById("1_3").children[3].innerText],
     "1_4": [document.getElementById("1_4").children[0].innerText, document.getElementById("1_4").children[3].innerText],
     "2_0": [document.getElementById("2_0").children[0].innerText, document.getElementById("2_0").children[3].innerText],
+    "2_1": [document.getElementById("2_1").children[0].innerText, document.getElementById("2_1").children[3].innerText],
+    "2_2": [document.getElementById("2_2").children[0].innerText, document.getElementById("2_2").children[3].innerText],
     "3_0": [document.getElementById("3_0").children[0].innerText, document.getElementById("3_0").children[3].innerText],
-    "3_1": [document.getElementById("3_1").children[0].innerText, document.getElementById("3_1").children[3].innerText],
-    "3_2": [document.getElementById("3_2").children[0].innerText, document.getElementById("3_2").children[3].innerText],
-    "3_3": [document.getElementById("3_3").children[0].innerText, document.getElementById("3_3").children[3].innerText],
   };
   localStorage.setItem(CHECK_STATUS_KEY, JSON.stringify(data));
 }
